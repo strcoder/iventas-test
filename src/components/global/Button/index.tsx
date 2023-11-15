@@ -2,7 +2,6 @@ import cx from 'classnames';
 import './styles.css';
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  isLink?: boolean;
   type?: 'button' | 'submit' | 'reset';
   variant?: 'outlined' | 'contained' | 'text';
   color?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'danger' | 'success' | 'warning' | 'text' | string;
