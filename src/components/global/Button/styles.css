@@ -1,0 +1,435 @@
+.btn {
+  display: inline-flex;
+  background-color: var(--soft-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-decoration: none;
+  transition: var(--transition-base);
+  white-space: nowrap;
+  align-items: center;
+  gap: var(--spacing-xs);
+
+  &.btn-sm {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-sm) var(--spacing-sm);
+  }
+
+  &.btn-lg {
+    font-size: var(--font-size-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+.btn-outlined {
+  background-color: transparent;
+  border-color: var(--soft-color);
+  color: var(--soft-color);
+
+  &:hover {
+    background-color: var(--soft-color);
+    border-color: var(--soft-color);
+    color: var(--text-color);
+  }
+
+  &:active {
+    background-color: var(--soft-color);
+    border-color: var(--soft-color);
+    color: var(--text-color);
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+    border-color: var(--border-color);
+    color: var(--text-color-disabled);
+    cursor: not-allowed;
+  }
+
+  &.btn-primary {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+
+    &:hover {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      color: var(--text-contrast-color);
+    }
+
+    &:active {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      color: var(--text-contrast-color);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+
+    &:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    &:active {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+  }
+
+  &.btn-tertiary {
+    background-color: transparent;
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+
+    &:hover {
+      background-color: var(--tertiary-color);
+      border-color: var(--tertiary-color);
+      color: var(--text-contrast-color);
+    }
+
+    &:active {
+      background-color: var(--tertiary-color);
+      border-color: var(--tertiary-color);
+      color: var(--text-contrast-color);
+    }
+  }
+
+  &.btn-accent {
+    background-color: transparent;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--text-color);
+    }
+
+    &:active {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--text-color);
+    }
+  }
+
+  &.btn-success {
+    background-color: transparent;
+    border-color: var(--success-color);
+    color: var(--success-color);
+
+    &:hover {
+      background-color: var(--success-color);
+      border-color: var(--success-color);
+      color: var(--text-contrast-color);
+    }
+
+    &:active {
+      background-color: var(--success-color);
+      border-color: var(--success-color);
+      color: var(--text-contrast-color);
+    }
+  }
+
+  &.btn-warning {
+    background-color: transparent;
+    border-color: var(--warning-color);
+    color: var(--warning-color);
+
+    &:hover {
+      background-color: var(--warning-color);
+      border-color: var(--warning-color);
+      color: var(--text-color);
+    }
+
+    &:active {
+      background-color: var(--warning-color);
+      border-color: var(--warning-color);
+      color: var(--text-color);
+    }
+  }
+
+  &.btn-danger {
+    background-color: transparent;
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+
+    &:hover {
+      background-color: var(--danger-color);
+      border-color: var(--danger-color);
+      color: var(--text-contrast-color);
+    }
+
+    &:active {
+      background-color: var(--danger-color);
+      border-color: var(--danger-color);
+      color: var(--text-contrast-color);
+    }
+  }
+}
+
+.btn-contained {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-contrast-color);
+
+  &:hover {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+  }
+
+  &:active {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+    border-color: var(--border-color);
+    color: var(--text-color-disabled);
+    cursor: not-allowed;
+  }
+
+  &.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-contrast-color);
+  }
+
+  &.btn-primary:hover {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+  }
+
+  &.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+
+  &.btn-secondary:hover {
+    background-color: var(--secondary-color-hover);
+    border-color: var(--secondary-color-hover);
+  }
+
+  &.btn-tertiary {
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+    color: var(--text-contrast-color);
+  }
+
+  &.btn-tertiary:hover {
+    background-color: var(--tertiary-color-hover);
+    border-color: var(--tertiary-color-hover);
+  }
+
+  &.btn-accent {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+  }
+
+  &.btn-accent:hover {
+    background-color: var(--accent-color-hover);
+    border-color: var(--accent-color-hover);
+  }
+
+  &.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: var(--text-contrast-color);
+  }
+
+  &.btn-success:hover {
+    background-color: var(--success-color-hover);
+    border-color: var(--success-color-hover);
+  }
+
+  &.btn-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--text-color);
+  }
+
+  &.btn-warning:hover {
+    background-color: var(--warning-color-hover);
+    border-color: var(--warning-color-hover);
+  }
+
+  &.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: var(--text-contrast-color);
+  }
+
+  &.btn-danger:hover {
+    background-color: var(--danger-color-hover);
+    border-color: var(--danger-color-hover);
+  }
+}
+
+.btn-text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--primary-color);
+
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--primary-color-hover);
+  }
+
+  &:active {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--primary-color-hover);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--text-color-disabled);
+    cursor: not-allowed;
+  }
+
+  &.btn-primary {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--primary-color);
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--primary-color-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--primary-color-hover);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--secondary-color);
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--secondary-color-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--secondary-color-hover);
+    }
+  }
+
+  &.btn-tertiary {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--tertiary-color);
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--tertiary-color-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--tertiary-color-hover);
+    }
+  }
+
+  &.btn-accent {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--accent-color);
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--accent-color-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--accent-color-hover);
+    }
+  }
+
+  &.btn-success {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--success-color);
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--success-color-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--success-color-hover);
+    }
+  }
+
+  &.btn-warning {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--warning-color);
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--warning-color-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--warning-color-hover);
+    }
+  }
+
+  &.btn-danger {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--danger-color);
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--danger-color-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--danger-color-hover);
+    }
+  }
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  font-size: var(--font-size-base);
+}
+
+
