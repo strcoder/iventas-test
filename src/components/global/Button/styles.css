@@ -20,6 +20,14 @@
     font-size: var(--font-size-lg);
     padding: var(--spacing-sm) var(--spacing-md);
   }
+
+  &.btn-icon-top {
+    flex-direction: column;
+  }
+
+  &.btn-icon-bottom {
+    flex-direction: column-reverse;
+  }
 }
 
 .btn-outlined {
@@ -377,13 +385,13 @@
   color: var(--primary-color);
 
   &:hover {
-    background-color: transparent;
+    background-color: rgba(133, 132, 132, 0.1);
     border-color: transparent;
     color: var(--primary-color-hover);
   }
 
   &:active {
-    background-color: transparent;
+    background-color: rgba(133, 132, 132, 0.1);
     border-color: transparent;
     color: var(--primary-color-hover);
   }
@@ -401,13 +409,13 @@
     color: var(--primary-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--primary-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--primary-color-hover);
     }
@@ -426,13 +434,13 @@
     color: var(--secondary-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--secondary-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--secondary-color-hover);
     }
@@ -451,13 +459,13 @@
     color: var(--tertiary-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--tertiary-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--tertiary-color-hover);
     }
@@ -476,13 +484,13 @@
     color: var(--accent-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--accent-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--accent-color-hover);
     }
@@ -501,13 +509,13 @@
     color: var(--success-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--success-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--success-color-hover);
     }
@@ -526,13 +534,13 @@
     color: var(--warning-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--warning-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--warning-color-hover);
     }
@@ -551,13 +559,13 @@
     color: var(--danger-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--danger-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--danger-color-hover);
     }
@@ -576,15 +584,40 @@
     color: var(--grey-color);
 
     &:hover {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--grey-color-hover);
     }
 
     &:active {
-      background-color: transparent;
+      background-color: rgba(133, 132, 132, 0.1);
       border-color: transparent;
       color: var(--grey-color-hover);
+    }
+
+    &:disabled {
+      background-color: transparent;
+      border-color: transparent;
+      color: var(--text-color-disabled);
+      cursor: not-allowed;
+    }
+  }
+
+  &.btn-text-color {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--text-color);
+
+    &:hover {
+      background-color: rgba(133, 132, 132, 0.1);
+      border-color: transparent;
+      color: var(--black);
+    }
+
+    &:active {
+      background-color: rgba(133, 132, 132, 0.1);
+      border-color: transparent;
+      color: var(--balck);
     }
 
     &:disabled {

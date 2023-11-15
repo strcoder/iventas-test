@@ -10,6 +10,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   iconColor?: 'primary' | 'secondary' | 'tertiary' | 'accent' | 'danger' | 'success' | 'warning' | 'text' | string;
   size?: 'sm' | 'md' | 'lg' | 'xl' | string;
   iconSize?: 'sm' | 'md' | 'lg' | 'xl' | string;
+  iconPosition?: 'top' | 'bottom' | 'left' | 'right';
   disabled?: boolean;
 }
 
@@ -25,15 +26,18 @@ const Button = ({
   size = 'md',
   iconSize = 'md',
   disabled = false,
+  iconPosition,
   ...props
 }: ButtonProps) => {
 
   const classes = cx({
     'btn': true,
-    [`btn-${color}`]: color,
+    [`btn-${color}`]: color !== 'text',
+    [`btn-${color}-color`]: color === 'text',
     [`btn-${variant}`]: variant,
     [`btn-${size}`]: size,
     [`${className}`]: className,
+    [`btn-icon-${iconPosition}`]: iconPosition,
   });
 
   const iconClasses = cx({
