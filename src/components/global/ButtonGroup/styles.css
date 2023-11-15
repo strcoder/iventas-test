@@ -1,0 +1,13 @@
+.btn-group {
+  display: flex;
+  width: fit-content;
+  box-shadow: var(--box-shadow-sm);
+
+  & .btn:not(:last-child):not(:first-child) {
+    border-left: 1px solid var(--border-color);
+  }
+
+  & .btn:last-child {
+    border-left: 1px solid var(--border-color);
+  }
+}
