@@ -1,0 +1,26 @@
+.btn.icon-button {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-lg);
+
+  & p {
+    font-size: var(--font-size-base);
+  }
+
+  & span {
+    font-size: var(--font-size-base);
+  }
+
+  &:hover {
+    background-color: rgba(80, 80, 80, 0.1);
+  }
+
+  &.icon-button-lg {
+    font-size: var(--font-size-xl);
+  }
+}
