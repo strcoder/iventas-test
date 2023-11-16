@@ -377,6 +377,24 @@
     color: var(--text-color-disabled);
     cursor: not-allowed;
   }
+
+  &.btn-grey {
+    background-color: var(--grey-color);
+    border-color: var(--grey-color);
+    color: var(--soft-color);
+  }
+
+  &.btn-grey:hover {
+    background-color: var(--grey-color-hover);
+    border-color: var(--grey-color-hover);
+  }
+
+  &.btn-grey:disabled {
+    background-color: var(--disabled-color);
+    border-color: var(--border-color);
+    color: var(--text-color-disabled);
+    cursor: not-allowed;
+  }
 }
 
 .btn-text {
