@@ -12,6 +12,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   iconSize?: 'sm' | 'md' | 'lg' | 'xl' | string;
   iconPosition?: 'top' | 'bottom' | 'left' | 'right';
   disabled?: boolean;
+  fullWidth?: boolean;
 }
 
 const Button = ({
@@ -27,6 +28,7 @@ const Button = ({
   iconSize = 'md',
   disabled = false,
   iconPosition,
+  fullWidth = false,
   ...props
 }: ButtonProps) => {
 
@@ -38,6 +40,7 @@ const Button = ({
     [`btn-${size}`]: size,
     [`${className}`]: className,
     [`btn-icon-${iconPosition}`]: iconPosition,
+    'btn-full-width': fullWidth,
   });
 
   const iconClasses = cx({

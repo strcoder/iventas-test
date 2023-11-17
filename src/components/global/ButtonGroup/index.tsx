@@ -10,6 +10,7 @@ type ButtonGroupProps = {
   disabled?: boolean;
   className?: string;
   currentActive?: number;
+  fullWidth?: boolean;
 };
 
 const ButtonGroup = ({
@@ -20,6 +21,7 @@ const ButtonGroup = ({
   disabled = false,
   className,
   currentActive,
+  fullWidth = false,
 }: ButtonGroupProps) => {
 
   const classes = cx({
@@ -27,31 +29,35 @@ const ButtonGroup = ({
     [`btn-group-${variant}`]: variant,
     [`btn-group-${color}`]: color,
     [`btn-group-${size}`]: size,
+    'btn-group-full-width': fullWidth,
     [`${className}`]: className,
   });
 
   const childrenWithProps = React.Children.map(children, (child, index) => {
     if (React.isValidElement(child)) {
       if (typeof currentActive === 'number' && currentActive === index) {
-        return React.cloneElement(child as React.ReactElement<any>, {
+        return React.cloneElement(child as React.ReactElement, {
           variant: variant !== 'text' ? 'contained' : variant,
           color,
           size,
           disabled,
+          fullWidth,
         });
       } else if (typeof currentActive === 'number' && currentActive !== index) {
-        return React.cloneElement(child as React.ReactElement<any>, {
+        return React.cloneElement(child as React.ReactElement, {
           variant: variant !== 'text' ? 'outlined' : variant,
-          color: variant === 'text' ? 'grey' : color,
+          color: variant === 'text' ? 'grey' : variant === 'contained' ? 'soft' : color,
           size,
           disabled,
+          fullWidth,
         });
       }
-      return React.cloneElement(child as React.ReactElement<any>, {
+      return React.cloneElement(child as React.ReactElement, {
         variant,
         color,
         size,
         disabled,
+        fullWidth,
       });
     }
     return child;

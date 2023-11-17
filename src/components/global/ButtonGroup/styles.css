@@ -10,4 +10,43 @@
   & .btn:last-child {
     border-left: 1px solid var(--border-color);
   }
+
+  & .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  & .btn-soft {
+    background-color: var(--disable-color);
+    color: var(--text-color-disabled);
+    border-color: transparent;
+  }
+
+  & .btn-soft:hover {
+    color: var(--primary-color);
+  }
+
+  & .btn-gray {
+    background-color: var(--disable-color);
+    color: var(--text-color);
+    border-color: transparent;
+  }
+
+  & .btn-gray.btn-outlined {
+    background-color: transparent;
+    color: var(--text-color);
+    border-color: transparent;
+  }
+
+  & .btn-gray:hover {
+    background-color: var(--disable-color);;
+  }
+}
+
+.btn-group-gray {
+  border: 1px solid var(--border-color);
+}
+
+.btn-group-full-width {
+  width: 100%;
 }
