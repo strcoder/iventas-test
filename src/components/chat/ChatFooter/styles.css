@@ -1,0 +1,17 @@
+.ChatFooter {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: var(--white);
+  width: 100%;
+}
+
+.ChatFooter .ChatFooter__button {
+  color: var(--white);
+  font-size: var(--font-size-xl);
+}
+
+.ChatFooter .ChatFooter__input .input-icon {
+  font-size: var(--font-size-xl);
+}

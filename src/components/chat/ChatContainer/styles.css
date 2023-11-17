@@ -1,0 +1,15 @@
+.ChatContainer {
+  display: grid;
+  width: 100%;
+  height: 89vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .ChatContainer {
+    height: 81vh;
+  }
+
+  .ChatContainer .ChatMenuActions {
+    display: none;
+  }
+}
