@@ -1,0 +1,37 @@
+.AppNavigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow: auto;
+}
+
+.AppNavigation__list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  overflow: auto;
+  gap: var(--spacing-xxs);
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--gray-300);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--gray-400);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-color);
+  }
+}
+
+@media screen and (min-width: 1323px) {
+  .AppNavigation__list {
+    justify-content: space-around;
+  }
+}

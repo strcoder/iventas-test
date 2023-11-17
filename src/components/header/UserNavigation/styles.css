@@ -1,0 +1,38 @@
+.UserNavigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.UserNavigation__list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  overflow: auto;
+  gap: var(--spacing-xxs);
+  border-left: 1px solid #E2E2E2;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--gray-300);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--gray-400);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .UserNavigation__list {
+    justify-content: space-around;
+  }
+}
