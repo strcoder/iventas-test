@@ -161,6 +161,7 @@ html {
 }
 
 body {
+  display: grid;
   background-color: var(--light-bg);
   transition: var(--transition-theme);
   font-family: var(--font-family-base);
