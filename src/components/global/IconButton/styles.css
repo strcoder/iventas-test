@@ -20,6 +20,10 @@
     background-color: rgba(80, 80, 80, 0.1);
   }
 
+  &.icon-button-sm {
+    font-size: var(--font-size-md);
+  }
+
   &.icon-button-lg {
     font-size: var(--font-size-xl);
   }
