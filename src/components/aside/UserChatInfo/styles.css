@@ -1,0 +1,53 @@
+.UserChatInfo {
+  background-color: var(--white);
+  display: grid;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  width: 100%;
+}
+
+.UserChatInfo__user {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: auto 1fr auto;
+}
+
+.UserChatInfo__user--info {
+  align-content: flex-start;
+  display: grid;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) 0;
+}
+
+.UserChatInfo__user--infoName {
+  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.UserChatInfo__user--infoPhone {
+  color: var(--grey-color);
+  font-size: var(--font-size-sm);
+}
+
+.UserChatInfo__buttons {
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  padding: var(--spacing-md) 0;
+}
+
+.UserChatInfo__tags {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.UserChatInfo__tags--list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.UserChatInfo__tags--button {
+  gap: var(--spacing-md);
+  justify-content: center;
+}

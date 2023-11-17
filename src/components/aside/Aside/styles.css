@@ -1,0 +1,12 @@
+.Aside {
+  display: grid;
+  height: 82vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .Aside {
+    gap: var(--spacing-lg);
+    height: 81vh;
+  }
+}
