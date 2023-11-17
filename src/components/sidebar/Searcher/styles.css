@@ -1,0 +1,7 @@
+.Searcher {
+  display: grid;
+  width: 100%;
+  background-color: var(--white);
+  padding: var(--spacing-md);
+  gap: var(--spacing-md);
+}

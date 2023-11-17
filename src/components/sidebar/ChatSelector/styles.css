@@ -1,0 +1,59 @@
+.ChatSelector {
+  display: grid;
+  width: 100%;
+  column-gap: var(--spacing-sm);
+  row-gap: var(--spacing-sm);
+  grid-template-columns: auto 1fr;
+  padding: var(--spacing-sm);
+}
+
+.ChatSelector__avatar {
+  grid-row-end: span 2;
+}
+
+.ChatSelector__info {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-xs);
+}
+
+.ChatSelector__info--name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.ChatSelector__lastMessage--time {
+  font-size: var(--font-size-sm);
+  color: var(--grey-color);
+}
+
+.ChatSelector__lastMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChatSelector__lastMessage--text {
+  font-size: var(--font-size-sm);
+  color: var(--grey-color);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.ChatSelector__lastMessage--count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--text-contrast-color);
+  border-radius: 50%;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  aspect-ratio: 1 / 1;
+  font-size: var(--font-size-sm);
+}

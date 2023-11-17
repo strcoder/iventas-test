@@ -1,0 +1,12 @@
+.Sidebar {
+  width: 100%;
+  display: grid;
+  height: 83vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .Sidebar {
+    gap: var(--spacing-lg);
+    height: 81vh;
+  }
+}
