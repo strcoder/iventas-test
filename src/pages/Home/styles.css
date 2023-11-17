@@ -1,0 +1,96 @@
+.Home {
+  display: grid;
+  align-content: flex-start;
+  justify-items: flex-start;
+  grid-template-areas:
+    'Header'
+    'Main';
+}
+
+.Home--showSidebar {
+  grid-template-areas:
+    'Header'
+    'Main'
+    'Sidebar';
+}
+
+.Home--showAside {
+  grid-template-areas:
+    'Header'
+    'Main'
+    'Aside';
+}
+
+.Home .Header {
+  grid-area: Header;
+}
+
+.Home .Sidebar {
+  align-content: flex-start;
+  grid-area: Sidebar;
+  display: none;
+}
+
+.Home .ChatContainer {
+  grid-area: Main;
+  align-content: flex-start;
+}
+
+.Home .Aside {
+  grid-area: Aside;
+  align-content: flex-start;
+  display: none;
+}
+
+.Home--showAside .ChatContainer > div:not(.ChatMenuActions),
+.Home--showSidebar .ChatContainer > div:not(.ChatMenuActions) {
+  display: none;
+}
+
+.Home--showAside .ChatContainer,
+.Home--showSidebar .ChatContainer {
+  height: auto;
+}
+
+.Home--showSidebar .Sidebar {
+  display: grid;
+}
+
+.Home--showAside .Aside {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .Home {
+    padding: var(--spacing-lg);
+    gap: var(--spacing-xl);
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas:
+      'Header Header Header'
+      'Sidebar Main Aside';
+  }
+
+  .Home .Sidebar {
+    display: grid;
+  }
+
+  .Home .Aside {
+    display: grid;
+  }
+
+  .Home--showAside .ChatContainer > div:not(.ChatMenuActions),
+  .Home--showSidebar .ChatContainer > div:not(.ChatMenuActions) {
+    display: grid;
+  }
+
+  .Home--showAside .ChatContainer,
+  .Home--showSidebar .ChatContainer {
+    height: 82vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Home {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
