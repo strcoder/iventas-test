@@ -42,3 +42,12 @@ If you are developing a production application, we recommend updating the config
 
    ```bash
    npm run dev
+
+## Resultado
+
+El prueba consistio en realizar una intefas UI de un chat, a continuacion se muestran los resultados en web y en modo responsive
+![Captura desde 2023-11-17 18-00-06](https://github.com/strcoder/iventas-test/assets/48764650/4630850f-90fd-4107-b071-6e9d1dbc3535)
+![Captura desde 2023-11-17 18-00-02](https://github.com/strcoder/iventas-test/assets/48764650/ca05ed92-49cd-4ba8-9388-c693162f2dee)
+![Captura desde 2023-11-17 17-59-44](https://github.com/strcoder/iventas-test/assets/48764650/88dcdee8-7925-4b5a-b858-5c42793abcda)
+![Captura desde 2023-11-17 17-59-14](https://github.com/strcoder/iventas-test/assets/48764650/e2f53dad-7e30-4ff7-8d5b-03da744b0a38)
+
